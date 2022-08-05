@@ -1,0 +1,9 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__logo {
+  @include side-sizes(195px, 90px);
+  color: $font-black-color;
+}

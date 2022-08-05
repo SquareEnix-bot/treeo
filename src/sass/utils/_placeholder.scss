@@ -1,0 +1,87 @@
+// %yellov-btn {
+//   font-size: 16px;
+//   line-height: 1.6;
+//   color: $hero-btn-font;
+
+//   display: inline-block;
+
+//   background-color: $accent-color;
+
+//   &:hover span::after,
+//   &:focus span::after {
+//     transform: translate3d(0, 0, 0);
+//   }
+
+//   @include mq(tablet) {
+//     font-size: 18px;
+//   }
+
+//   @include mq(desktop) {
+//     font-size: 22px;
+//   }
+// }
+
+// %slide-in {
+//   display: inline-block;
+//   position: relative;
+//   overflow: hidden;
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 0.1em;
+//     background-color: $hero-btn-font;
+//     opacity: 1;
+//     transition: transform $time-function;
+//     transform: translate3d(-100%, 0, 0);
+//   }
+// }
+
+// %fade-in {
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 2px;
+//     background-color: $white-color;
+//     opacity: 0;
+//     transition: opacity 300ms, transform 300ms;
+//   }
+
+//   &:hover::after,
+//   &:focus::after {
+//     opacity: 1;
+//     transform: translate3d(0, 0.2em, 0);
+//   }
+// }
+
+// %sosial-box {
+//   @include flex-center();
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+//   transition-property: background-color;
+//   @extend %trans;
+
+//   &:hover,
+//   &:focus {
+//     background-color: $accent-color;
+//   }
+// }
+
+// %sosial-icon {
+//   height: 20px;
+//   width: 20px;
+
+//   @extend %trans;
+
+//   .soclink__box:hover &,
+//   .soclink__box:focus & {
+//     fill: $white-color;
+//   }
+// }
