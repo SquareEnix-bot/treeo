@@ -37,7 +37,8 @@
   $mobile-start: 320px;
   $mobile: 480px;
   $tablet: 768px;
-  $desktop: 1440px; // це брейк-поінт а не контейнер
+  $laptop: 1024px;
+  $desktop: 1440px;
 
   @if $screen==small-mobile {
     @media screen and (max-width: $mobile) {
@@ -58,13 +59,25 @@
   }
 
   @else if $screen==tablet-only {
-    @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+    @media screen and (min-width: $tablet) and (max-width: #{$laptop - 0.02}) {
       @content;
     }
   }
 
   @else if $screen==tablet {
     @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+
+  @else if $screen==laptop-only {
+    @media screen and (min-width: $laptop) and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  }
+
+  @else if $screen==laptop {
+    @media screen and (min-width: $laptop) {
       @content;
     }
   }
