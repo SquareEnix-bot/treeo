@@ -2,7 +2,7 @@ body {
   font-family: $font-sans-serif;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   padding: 0;
   margin: 0;
 }
@@ -43,7 +43,11 @@ img {
     max-width: 768px;
   }
 
-  @include mq(tablet) {
+  @include mq(laptop) {
+    max-width: 1024px;
+  }
+
+  @include mq(desktop) {
     max-width: 1440px;
   }
 }
@@ -108,8 +112,9 @@ img {
 
 button {
   padding: 0;
-  border: none;  
-  color: inherit;  
+  border: none;
+  color: inherit;
+  background-color: transparent;
   cursor: pointer;
 }
 
