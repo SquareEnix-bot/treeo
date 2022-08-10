@@ -56,6 +56,7 @@
   opacity: 0;
   overflow: hidden;
   transition: $time-function;
+  background-color: $font-white-color;
 
   @include mq(tablet) {
     height: calc(20vh);
@@ -91,7 +92,7 @@
   }
 
   & .header__item {
-    @include mq(only-mobile) {
+    @include mq(mobile-only) {
       &:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -99,12 +100,12 @@
   }
 
   & .header__link {
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-size: 36px;
 
     @include mq(tablet) {
-      font-size: 20px;
+      font-size: 22px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 

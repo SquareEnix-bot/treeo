@@ -60,7 +60,7 @@ img {
     padding: 100px 0;
   }
 
-  @include mq(desktop) {
+  @include mq(laptop) {
     padding: 150px 0;
   }
 }
