@@ -1,0 +1,35 @@
+.montage {
+  background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
+}
+
+.montage__wrapper {
+  @include mq(tablet) {
+    display: flex;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.montage__left {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
+    width: 50%;
+    background-color: lightgray;
+  }
+}
+
+.montage__right {
+  padding: 25px;
+
+  @include mq(tablet) {
+    width: 50%;
+  }
+}
