@@ -1,0 +1,118 @@
+.products__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @include mq(laptop) {
+    justify-content: center;
+  }
+}
+
+.products__item {
+  position: relative;
+
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+
+  @include mq(tablet) {
+    width: calc(50% - 15px);
+  }
+
+  @include mq(tablet-only) {
+    height: 541px; // TODO костиль
+  }
+
+  @include mq(laptop) {
+    width: calc(450px);
+    height: 518px; // TODO костиль
+  }
+}
+
+.products__wrapper {
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  width: 100%;
+  transition: transform $time-function;
+
+  @include mq(mobile-only) {
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: transform $time-function, opacity $time-function;
+
+    &--active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @include mq(tablet) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+
+    &--active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.products__img {
+  @include side-sizes(100%, 290px); // TODO тут буде картинка
+  background-color: lightgrey;
+  border-top-left-radius: 50px;
+  // border-bottom-right-radius: 50px;
+}
+
+.products__desk {
+  padding: 25px;
+}
+
+.products__subtitle {
+  font-family: $font-serif;
+  font-weight: 600;
+  font-size: 25px;
+
+  margin-bottom: 10px;
+
+  @include mq(tablet) {
+    font-size: 30px;
+  }
+}
+
+.products__text {
+  margin-bottom: 20px;
+}
+
+.products__link {
+  display: block;
+  width: fit-content;
+  padding: 20px 40px;
+  margin-left: auto;
+
+  font-size: 18px;
+
+  border: 2px solid $font-black-color;
+  border-radius: 20px;
+
+  transition: border-color $time-function, font-weight $time-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    font-weight: 600;
+  }
+
+  @include mq(tablet) {
+    font-size: 20px;
+  }
+}
