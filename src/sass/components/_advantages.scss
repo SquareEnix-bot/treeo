@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
 
-  @include mq(only-mobile) {
+  @include mq(mobile-only) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
