@@ -1,2 +1,0 @@
-(()=>{const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),c=document.querySelectorAll(".header__link");e.addEventListener("click",(()=>{e.classList.toggle("burger--active"),t.classList.toggle("mobile--active")})),[...c].forEach((c=>{c.addEventListener("click",(()=>{e.classList.toggle("burger--active"),t.classList.toggle("mobile--active")}))}))})();
-//# sourceMappingURL=index.b35bc203.js.map
