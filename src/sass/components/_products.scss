@@ -52,25 +52,24 @@
     }
   }
 
-  @include mq(tablet) {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    top: 100%;
+  // @include mq(tablet) {
+  //   position: absolute;
+  //   visibility: hidden;
+  //   opacity: 0;
+  //   top: 100%;
 
-    &--active {
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(-100%);
-    }
-  }
+  //   &--active {
+  //     visibility: visible;
+  //     opacity: 1;
+  //     transform: translateY(-100%);
+  //   }
+  // }
 }
 
 .products__img {
   @include side-sizes(100%, 290px); // TODO тут буде картинка
   background-color: lightgrey;
   border-top-left-radius: 50px;
-  // border-bottom-right-radius: 50px;
 }
 
 .products__desk {
