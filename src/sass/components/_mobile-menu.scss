@@ -49,6 +49,7 @@
   position: absolute;
   padding-top: 50px;
   padding-bottom: 100px;
+  top: 100px;
   left: 0;
   width: 100%;
   height: calc(100vh - 100px);
@@ -58,17 +59,15 @@
   transition: $time-function;
   background-color: $font-white-color;
 
-  @include mq(tablet) {
-    height: calc(20vh);
-    padding-bottom: 50px;
-  }
-
-  // z-index: 1;
-
   &--active {
     visibility: visible;
     opacity: 1;
     pointer-events: initial;
+  }
+
+  @include mq(tablet) {
+    height: calc(20vh);
+    padding-bottom: 50px;
   }
 
   @include mq(laptop) {

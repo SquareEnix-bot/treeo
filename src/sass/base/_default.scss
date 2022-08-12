@@ -54,22 +54,26 @@ img {
 
 .section {
   // * спільний клас для секцій  
-  padding: 50px 0;
+  padding-top: 100px;
+  padding-bottom: 30px;
 
   @include mq(tablet) {
-    padding: 100px 0;
+    padding-bottom: 60px;
   }
 
   @include mq(laptop) {
-    padding: 150px 0;
+    padding-bottom: 90px;
   }
 }
 
 .section-title {
+  position: relative;
   font-family: $font-serif;
   font-size: 35px;
   text-align: center;
   margin-bottom: 50px;
+
+  @extend %icon-parquet;
 
   @include mq(tablet) {
     font-size: 40px;

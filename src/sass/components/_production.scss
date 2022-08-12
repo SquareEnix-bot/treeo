@@ -1,0 +1,17 @@
+// .production {
+//   background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
+// }
+
+.production__gallery {
+  @include flex-center;
+  height: 400px;
+  background-color: lightgrey;
+}
+
+.production__desc {
+  font-family: $font-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
