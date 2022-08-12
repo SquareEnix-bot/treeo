@@ -85,15 +85,7 @@ img {
 }
 
 .section-text {
-  font-size: 18px;
-
-  @include mq(tablet) {
-    font-size: 20px;
-  }
-
-  @include mq(laptop) {
-    font-size: 20px;
-  }
+  font-size: 20px;
 }
 
 .visually-hidden {

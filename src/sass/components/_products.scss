@@ -51,19 +51,6 @@
       transform: translateX(0);
     }
   }
-
-  // @include mq(tablet) {
-  //   position: absolute;
-  //   visibility: hidden;
-  //   opacity: 0;
-  //   top: 100%;
-
-  //   &--active {
-  //     visibility: visible;
-  //     opacity: 1;
-  //     transform: translateY(-100%);
-  //   }
-  // }
 }
 
 .products__img {
@@ -90,6 +77,7 @@
 
 .products__text {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .products__link {
