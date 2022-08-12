@@ -1,6 +1,6 @@
-// .montage {
-//   background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
-// }
+.montage {
+  background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
+}
 
 .montage__wrapper {
   @include mq(tablet) {
@@ -40,5 +40,4 @@
 .montage__text {
   font-family: $font-serif;
   font-weight: 500;
-  font-size: 20px;
 }

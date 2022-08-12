@@ -1,6 +1,6 @@
-// .production {
-//   background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
-// }
+.production {
+  background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
+}
 
 .production__gallery {
   @include flex-center;

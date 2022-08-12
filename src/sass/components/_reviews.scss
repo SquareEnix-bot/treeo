@@ -1,0 +1,61 @@
+.swiper {
+  .swiper-slide {
+    @include flex-center;
+
+    @include mq(small-mobile) {
+      padding: 0 5px;
+    }
+
+    @include mq(desktop) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $accent-color;
+  }
+
+  .review {
+    background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
+  }
+}
+
+.reviews__list {
+  display: none;
+
+  @include mq(desktop) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.review {
+  max-width: 320px;
+  padding: 50px 25px;
+  background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
+  border-radius: 50px;
+}
+
+.review__line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review__img {
+  @include side-sizes(60px, 60px);
+  margin-right: 30px;
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+
+.review__client {
+  font-family: $font-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.review__text {
+  font-family: $font-serif;
+  font-weight: 500;
+}
