@@ -1,6 +1,6 @@
-.montage {
-  background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
-}
+// .montage {
+//   background: linear-gradient(90deg, rgba(120, 182, 45, 0.25) 0%, rgba(120, 182, 45, 0.25) 100%);
+// }
 
 .montage__wrapper {
   @include mq(tablet) {
@@ -8,7 +8,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   &:nth-child(even) {
@@ -17,19 +17,28 @@
 }
 
 .montage__left {
-  display: none;
+  background-color: lightgray;
+  height: 300px; // TODO костиль
+
+  @include mq(mobile-only) {
+    margin-bottom: 30px;
+  }
 
   @include mq(tablet) {
-    display: block;
     width: 50%;
     background-color: lightgray;
   }
 }
 
 .montage__right {
-  padding: 25px;
-
   @include mq(tablet) {
+    padding: 25px;
     width: 50%;
   }
+}
+
+.montage__text {
+  font-family: $font-serif;
+  font-weight: 500;
+  font-size: 20px;
 }

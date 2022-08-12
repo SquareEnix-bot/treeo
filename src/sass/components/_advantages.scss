@@ -28,14 +28,10 @@
 }
 
 .advantages__icon {
-  @include side-sizes(50px, 50px);
+  @include side-sizes(40px, 40px);
   @include flex-center;
   margin-bottom: 5px;
   color: $accent-color;
-}
-
-.advantages__swg {
-  @include side-sizes(40px, 40px);
 }
 
 .advantages__text {
